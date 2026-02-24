@@ -34,6 +34,6 @@ fn main() {
         }
     }
 
-    let raw_ptr = password_input.as_ptr();
+    //let raw_ptr = password_input.as_ptr();
 
 }
