@@ -21,10 +21,6 @@ fn main() {
     
 // We are mutating the underlying byte buffer of the String.
 // This is unsafe because String must always contain valid UTF-8.
-// We guarantee safety here because:
-// 1. We only overwrite existing bytes within bounds (0..cutoff).
-// 2. We do not change length or capacity.
-// 3. We only write ASCII '*' (valid UTF-8).
     unsafe {
         let bytes = password_input.as_mut_vec();
         
